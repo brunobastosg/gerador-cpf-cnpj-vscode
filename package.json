@@ -2,7 +2,7 @@
     "name": "gerador-cpf-cnpj",
     "displayName": "Gerador de CPF/CNPJ",
     "description": "Gera CPFs e CNPJs válidos e insere diretamente no código",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "brunobastosg",
     "engines": {
         "vscode": "^1.21.0"
