@@ -1,7 +1,5 @@
 # Change Log
-All notable changes to the "gerador-cpf-cnpj" extension will be documented in this file.
+Todas as mudanças nesta extensão serão documentadas neste arquivo.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-- Initial release
+## 1.0.0 - 01/04/2018
+- Versão inicial.
