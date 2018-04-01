@@ -4,6 +4,7 @@
     "description": "Gera CPFs e CNPJs válidos e insere diretamente no código",
     "version": "1.0.0",
     "publisher": "brunobastosg",
+    "repository": "github:brunobastosg/gerador-cpf-cnpj-vscode",
     "engines": {
         "vscode": "^1.21.0"
     },
