@@ -4,7 +4,8 @@
     "description": "Gera CPFs e CNPJs válidos e insere diretamente no código",
     "version": "1.0.0",
     "publisher": "brunobastosg",
-    "repository": "github:brunobastosg/gerador-cpf-cnpj-vscode",
+    "repository": "https://github.com/brunobastosg/gerador-cpf-cnpj-vscode",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.21.0"
     },
@@ -47,11 +48,11 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.61",
         "tslint": "^5.8.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "typescript": "^2.8.3",
+        "vscode": "^1.1.16"
     },
     "dependencies": {}
 }
