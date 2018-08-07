@@ -73,7 +73,7 @@
         "@types/node": "^7.0.61",
         "tslint": "^5.8.0",
         "typescript": "^2.8.3",
-        "vscode": "^1.1.16"
+        "vscode": "^1.1.18"
     },
     "dependencies": {}
 }
