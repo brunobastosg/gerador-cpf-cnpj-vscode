@@ -21,6 +21,11 @@ Esta extensão disponibiliza as seguintes configurações:
 
 ## Release Notes
 
+### 1.1.1
+
+Adicionado ícone.
+Atualizando dependências para corrigir vulnerabilidades.
+
 ### 1.1.0
 
 Adicionado menu de contexto.
