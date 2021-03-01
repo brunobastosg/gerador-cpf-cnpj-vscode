@@ -25,7 +25,7 @@ Esta extensão disponibiliza as seguintes configurações:
 
 ### 1.2.0
 
-- Adicionada possibilidade de utilizar múltiplos cursores (contribução de [Marcos Lacerda](https://github.com/marcosalpereira)).
+- Adicionada possibilidade de utilizar múltiplos cursores (contribuição de [Marcos Lacerda](https://github.com/marcosalpereira)).
 
 ### 1.1.1
 
