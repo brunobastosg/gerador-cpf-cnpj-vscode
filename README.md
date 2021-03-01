@@ -12,6 +12,8 @@ Abra a paleta de comandos do VSCode através das teclas `Ctrl+Alt+P` e pesquise 
 
 Em ambos os casos, o CPF ou CNPJ gerado será inserido na posição do cursor ou substituirá um trecho previamente selecionado.
 
+Caso haja mais de um cursor, será gerado um CPF ou CNPJ diferente na posição de cada um dos cursores.
+
 ## Configurações da extensão
 
 Esta extensão disponibiliza as seguintes configurações:
@@ -21,15 +23,19 @@ Esta extensão disponibiliza as seguintes configurações:
 
 ## Release Notes
 
+### 1.2.0
+
+- Adicionada possibilidade de utilizar múltiplos cursores (contribução de [Marcos Lacerda](https://github.com/marcosalpereira)).
+
 ### 1.1.1
 
-Adicionado ícone.
-Atualizando dependências para corrigir vulnerabilidades.
+- Adicionado ícone.
+- Atualizando dependências para corrigir vulnerabilidades.
 
 ### 1.1.0
 
-Adicionado menu de contexto.
+- Adicionado menu de contexto.
 
 ### 1.0.0
 
-Versão inicial.
+- Versão inicial.
