@@ -20,8 +20,13 @@ Esta extensão disponibiliza as seguintes configurações:
 
 * `geradorCpfCnpj.somenteNumeros`: habilita/desabilita a máscara nos CPF's e CNPJ's gerados
 * `geradorCpfCnpj.habilitarMenuDeContexto`: habilita/desabilita opção de gerar CPF/CNPJ no menu de contexto
+* `geradorCpfCnpj.habilitarCnpjAlfanumerico`: habilita/desabilita opção de gerar CNPJ alfanumérico
 
 ## Release Notes
+
+### 1.3.0
+
+- Adicionada possibilidade de gerar CNPJ's alfanuméricos para testes da mudança anunciada pela RFB na Nota Técnica COCAD/SUARA/RFB nº 49/2024.
 
 ### 1.2.0
 
