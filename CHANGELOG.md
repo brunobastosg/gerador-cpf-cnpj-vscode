@@ -1,4 +1,5 @@
 # Change Log
+
 Todas as mudanças nesta extensão serão documentadas neste arquivo.
 
 ## 1.2.0 - 01/03/2021

@@ -10,17 +10,13 @@
     },
     "license": "MIT",
     "engines": {
-        "vscode": "^1.21.0"
+        "vscode": "^1.75.0"
     },
     "categories": [
         "Other"
     ],
     "icon": "images/icon.png",
-    "activationEvents": [
-        "onCommand:extension.gerarCPF",
-        "onCommand:extension.gerarCNPJ"
-    ],
-    "main": "./out/extension",
+    "main": "./dist/extension.js",
     "contributes": {
         "commands": [
             {
@@ -66,18 +62,32 @@
         }
     },
     "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+        "vscode:prepublish": "npm run package",
+        "compile": "npm run check-types && npm run lint && node esbuild.js",
+        "watch": "npm-run-all -p watch:*",
+        "watch:esbuild": "node esbuild.js --watch",
+        "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+        "package": "npm run check-types && npm run lint && node esbuild.js --production",
+        "compile-tests": "tsc -p . --outDir out",
+        "watch-tests": "tsc -p . -w --outDir out",
+        "pretest": "npm run compile-tests && npm run compile && npm run lint",
+        "check-types": "tsc --noEmit",
+        "lint": "eslint src",
+        "test": "vscode-test",
+        "deploy": "vsce publish --yarn"
     },
     "devDependencies": {
-        "@types/mocha": "^5.2.6",
-        "@types/node": "^11.13.8",
-        "tslint": "^5.16.0",
-        "typescript": "^3.4.5",
-        "vscode": "^1.1.37"
-    },
-    "dependencies": {}
+        "@types/mocha": "^10.0.8",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.94.0",
+        "@typescript-eslint/eslint-plugin": "^8.7.0",
+        "@typescript-eslint/parser": "^8.7.0",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1",
+        "@vscode/vsce": "^3.1.1",
+        "esbuild": "^0.24.0",
+        "eslint": "^9.11.1",
+        "npm-run-all": "^4.1.5",
+        "typescript": "^5.6.2"
+    }
 }

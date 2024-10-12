@@ -1,5 +1,3 @@
-'use strict';
-
 import { gerarCPF, gerarCNPJ } from './gerador';
 import * as vscode from 'vscode';
 
