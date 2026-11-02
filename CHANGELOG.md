@@ -2,6 +2,11 @@
 
 Todas as mudanças nesta extensão serão documentadas neste arquivo.
 
+## 1.4.0 - 01/11/2026
+- Adicionado servidor MCP local via stdio com as ferramentas Gerar CPF, Gerar CNPJ, Validar CPF e Validar CNPJ.
+- Geração MCP respeita as configurações da extensão, com overrides independentes de `somenteNumeros` e `habilitarCnpjAlfanumerico` por chamada.
+- Adicionados testes de protocolo MCP, processo stdio, configurações e regressão dos comandos existentes.
+
 ## 1.3.0 - 12/10/2024
 - Adicionada possibilidade de gerar CNPJ's alfanuméricos para testes da mudança anunciada pela RFB na Nota Técnica COCAD/SUARA/RFB nº 49/2024.
 

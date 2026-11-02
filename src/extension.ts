@@ -1,7 +1,13 @@
 import { gerarCPF, gerarCNPJ } from './gerador';
+import { ProvedorMcp } from './mcpProvider';
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
+    const provedorMcp = new ProvedorMcp(context.extensionUri);
+    context.subscriptions.push(
+        provedorMcp,
+        vscode.lm.registerMcpServerDefinitionProvider('geradorCpfCnpj.mcp', provedorMcp)
+    );
 
     const somenteNumeros = !!vscode.workspace.getConfiguration('geradorCpfCnpj').get<boolean>('somenteNumeros');
     const habilitarCnpjAlfanumerico = !!vscode.workspace.getConfiguration('geradorCpfCnpj').get<boolean>('habilitarCnpjAlfanumerico');
@@ -36,4 +42,3 @@ function generate(somenteNumeros: boolean, gerador: (somenteNumeros: boolean, ha
 
 export function deactivate() {
 }
-
